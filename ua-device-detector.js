@@ -453,7 +453,7 @@
         };
     }
 
-    if (!!module && !!require) {
+    if (!!module && typeof require === "function") {
         var reTree = require("re-tree");
         module.exports = {
             parseUserAgent: function (ua, customDetectors) {
